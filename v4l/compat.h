@@ -2929,4 +2929,20 @@ static inline int dev_err_probe(const struct device *dev, int err, const char *f
 }
 #endif
 
+#ifdef NEED_PM_RUNTIME_RESUME_AND_GET
+#include <linux/pm_runtime.h>
+static inline int pm_runtime_resume_and_get(struct device *dev)
+{
+	int ret;
+
+	ret = __pm_runtime_resume(dev, RPM_GET_PUT);
+	if (ret < 0) {
+		pm_runtime_put_noidle(dev);
+		return ret;
+	}
+
+	return 0;
+}
+#endif
+
 #endif /*  _COMPAT_H */

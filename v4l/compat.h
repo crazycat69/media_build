@@ -6,6 +6,7 @@
 #define _COMPAT_H
 
 #include <linux/version.h>
+#include <linux/kconfig.h>
 
 #include "config-compat.h"
 /*

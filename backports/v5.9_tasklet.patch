@@ -136,10 +136,10 @@ index e7604b7ecc8d..9ca0fc3e6f80 100644
  	tasklet_disable(&port->tasklet);
  	port->enable = 1;
  	return 0;
-diff --git a/drivers/media/pci/ttpci/av7110.c b/drivers/media/pci/ttpci/av7110.c
+diff --git a/drivers/staging/media/av7110/av7110.c b/drivers/staging/media/av7110/av7110.c
 index 885e6bc40c19..bf36b1e22b63 100644
---- a/drivers/media/pci/ttpci/av7110.c
-+++ b/drivers/media/pci/ttpci/av7110.c
+--- a/drivers/staging/media/av7110/av7110.c
++++ b/drivers/staging/media/av7110/av7110.c
 @@ -357,9 +357,9 @@ static inline void start_debi_dma(struct av7110 *av7110, int dir,
  		irdebi(av7110, DEBISWAB, addr, 0, len);
  }

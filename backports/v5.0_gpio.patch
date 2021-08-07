@@ -10,6 +10,30 @@ index 062125501788..00d4f434c882 100644
  
  #include <media/v4l2-ctrls.h>
  #include <media/v4l2-fwnode.h>
+diff --git a/drivers/media/i2c/imx335.c b/drivers/media/i2c/imx335.c
+index 410d6b86feb5..4b7dcdcb4167 100644
+--- a/drivers/media/i2c/imx335.c
++++ b/drivers/media/i2c/imx335.c
+@@ -7,6 +7,7 @@
+ #include <asm/unaligned.h>
+ 
+ #include <linux/clk.h>
++#include <linux/gpio/consumer.h>
+ #include <linux/delay.h>
+ #include <linux/i2c.h>
+ #include <linux/module.h>
+diff --git a/drivers/media/i2c/imx412.c b/drivers/media/i2c/imx412.c
+index be3f6ea55559..6a8f37c4b319 100644
+--- a/drivers/media/i2c/imx412.c
++++ b/drivers/media/i2c/imx412.c
+@@ -7,6 +7,7 @@
+ #include <asm/unaligned.h>
+ 
+ #include <linux/clk.h>
++#include <linux/gpio/consumer.h>
+ #include <linux/delay.h>
+ #include <linux/i2c.h>
+ #include <linux/module.h>
 diff --git a/drivers/media/i2c/ov5648.c b/drivers/media/i2c/ov5648.c
 index 947d437ed0ef..639db970722b 100644
 --- a/drivers/media/i2c/ov5648.c

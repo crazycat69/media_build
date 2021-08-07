@@ -1,5 +1,7 @@
 # Use this for stuff for drivers that don't compile
 [9.255.255]
+VIDEO_OV772X
+VIDEO_OV9650
 VIDEO_IPU3_IMGU
 INTEL_ATOMISP
 
@@ -28,8 +30,6 @@ VIDEO_IMX258
 
 [4.19.0]
 # Needs devm_regmap_init_sccb
-VIDEO_OV772X
-VIDEO_OV9650
 # Needs gpiod_set_consumer_name
 VIDEO_MAX9286
 

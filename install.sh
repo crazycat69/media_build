@@ -7,6 +7,7 @@ sed -i '/VIDEO_OV772X/d' ./v4l/versions.txt && sed -i '/9.255.255/a VIDEO_OV772X
 # Enable some staging drivers
 make stagingconfig
 sed -i -r 's/(^CONFIG.*_RC.*=)./\1n/g' v4l/.config
+sed -i -r 's/(^CONFIG.*_IR.*=)./\1n/g' v4l/.config
 
 echo "V4L drivers building..."
 make -j5

@@ -9,6 +9,8 @@ VIDEO_OV9650
 [5.5]
 # lots of kAPI changes in 5.6, so disable for older kernels
 SND_BT87X
+# needs linux/units.h
+VIDEO_OV02A10
 
 [5.4]
 CEC_CROS_EC
@@ -95,7 +97,6 @@ VIDEO_DW9714
 VIDEO_DW9768
 VIDEO_RDACM20
 VIDEO_RDACM21
-VIDEO_OV02A10
 
 [4.9.0]
 # needs linux/bitfield.h

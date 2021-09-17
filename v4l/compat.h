@@ -1250,4 +1250,8 @@ struct vm_area_struct *vma_lookup(struct mm_struct *mm, unsigned long addr)
 }
 #endif
 
+#ifdef NEED_HZ_PER_MHZ
+#define HZ_PER_MHZ 1000000UL
+#endif
+
 #endif /*  _COMPAT_H */

@@ -4,7 +4,7 @@
 make stagingconfig
 
 echo "V4L drivers building..."
-make -j5
+make -j$(nproc)
 
 echo "V4L drivers installing..."
 sudo rm -r -f /lib/modules/$(uname -r)/kernel/drivers/media

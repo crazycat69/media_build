@@ -31,6 +31,10 @@ VIDEO_OMAP3
 VIDEO_IMX274
 VIDEO_IMX258
 
+[5.0]
+# DMA mask warnings
+VIDEO_MEM2MEM_DEINTERLACE
+
 [4.19.0]
 # Needs gpiod_set_consumer_name
 VIDEO_MAX9286

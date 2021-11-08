@@ -38,6 +38,7 @@ VIDEO_MEM2MEM_DEINTERLACE
 [4.19.0]
 # Needs gpiod_set_consumer_name
 VIDEO_MAX9286
+VIDEO_MAX96712
 
 [4.18.0]
 # Needs proc_create_single

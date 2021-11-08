@@ -147,6 +147,7 @@ sub check_other_dependencies()
 	check_files_for_func("vma_lookup", "NEED_VMA_LOOKUP", "include/linux/mm.h");
 	check_files_for_func("HZ_PER_MHZ", "NEED_HZ_PER_MHZ", "include/linux/units.h");
 	check_files_for_func("dma_vmap_noncontiguous", "NEED_DMA_VMAP_NONCONTIGUOUS", "include/linux/dma-mapping.h");
+	check_files_for_func("sysfs_emit", "NEED_SYSFS_EMIT", "include/linux/sysfs.h");
 
 	# For tests for uapi-dependent logic
 	check_files_for_func_uapi("usb_endpoint_maxp_mult", "NEED_USB_ENDPOINT_MAXP_MULT", "usb/ch9.h");

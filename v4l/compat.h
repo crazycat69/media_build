@@ -1281,4 +1281,8 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 }
 #endif
 
+#ifdef NEED_SYSFS_EMIT
+#define sysfs_emit(buf, args...) snprintf(buf, PAGE_SIZE, ##args)
+#endif
+
 #endif /*  _COMPAT_H */

@@ -1289,4 +1289,8 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define eth_hw_addr_set(dev, addr) memcpy((dev)->dev_addr, addr, ETH_ALEN)
 #endif
 
+#ifdef NEED_MODULE_IMPORT_NS
+#define MODULE_IMPORT_NS(s)
+#endif
+
 #endif /*  _COMPAT_H */

@@ -116,6 +116,8 @@ VIDEO_ASPEED
 [4.8.0]
 # needs i2c_new_secondary_device
 VIDEO_ADV748X
+# needs pwm_init_state
+IR_PWM_TX
 
 [4.7.0]
 # needs i2c_mux_alloc

@@ -70,15 +70,3 @@ index 2e0b315801e5..5ce93e70abcf 100644
  #include <linux/delay.h>
  #include <linux/i2c.h>
  #include <linux/module.h>
-diff --git a/drivers/staging/media/max96712/max96712.c b/drivers/staging/media/max96712/max96712.c
-index 847e2ffd4f53..65561bdd4cfb 100644
---- a/drivers/staging/media/max96712/max96712.c
-+++ b/drivers/staging/media/max96712/max96712.c
-@@ -7,6 +7,7 @@
-  */
- 
- #include <linux/delay.h>
-+#include <linux/gpio/consumer.h>
- #include <linux/i2c.h>
- #include <linux/module.h>
- #include <linux/of_graph.h>

@@ -2,9 +2,6 @@
 [9.255.255]
 VIDEO_IPU3_IMGU
 INTEL_ATOMISP
-# Needs devm_regmap_init_sccb (select REGMAP_SCCB)
-VIDEO_OV772X
-VIDEO_OV9650
 
 [5.16]
 # Needs i2c_driver flags field
@@ -43,6 +40,9 @@ VIDEO_MEM2MEM_DEINTERLACE
 # Needs gpiod_set_consumer_name
 VIDEO_MAX9286
 VIDEO_MAX96712
+# Needs devm_regmap_init_sccb (select REGMAP_SCCB)
+VIDEO_OV772X
+VIDEO_OV9650
 
 [4.18.0]
 # Needs proc_create_single

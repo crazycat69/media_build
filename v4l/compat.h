@@ -1293,4 +1293,10 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define MODULE_IMPORT_NS(s)
 #endif
 
+#ifdef NEED_ALIGN_DOWN
+#define __V4L_COMPAT_ALIGN_KERNEL(x, a)		__V4L_COMPAT_ALIGN_KERNEL_MASK(x, (typeof(x))(a) - 1)
+#define __V4L_COMPAT_ALIGN_KERNEL_MASK(x, mask)	(((x) + (mask)) & ~(mask))
+#define ALIGN_DOWN(x, a)			__V4L_COMPAT_ALIGN_KERNEL((x) - ((a) - 1), (a))
+#endif
+
 #endif /*  _COMPAT_H */

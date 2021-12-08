@@ -150,6 +150,7 @@ sub check_other_dependencies()
 	check_files_for_func("sysfs_emit", "NEED_SYSFS_EMIT", "include/linux/sysfs.h");
 	check_files_for_func("eth_hw_addr_set", "NEED_ETH_HW_ADDR_SET", "include/linux/etherdevice.h");
 	check_files_for_func("MODULE_IMPORT_NS", "NEED_MODULE_IMPORT_NS", "include/linux/module.h");
+	check_files_for_func("ALIGN_DOWN", "NEED_ALIGN_DOWN", "include/linux/align.h", "include/linux/kernel.h");
 
 	# For tests for uapi-dependent logic
 	check_files_for_func_uapi("usb_endpoint_maxp_mult", "NEED_USB_ENDPOINT_MAXP_MULT", "usb/ch9.h");

@@ -8,6 +8,10 @@ INTEL_ATOMISP
 VIDEO_OV772X
 VIDEO_OV9650
 
+[5.16]
+# Needs i2c_driver flags field
+VIDEO_IMX319
+
 [5.5]
 # lots of kAPI changes in 5.6, so disable for older kernels
 SND_BT87X
@@ -33,9 +37,14 @@ VIDEO_OMAP3
 VIDEO_IMX274
 VIDEO_IMX258
 
+[5.0]
+# DMA mask warnings
+VIDEO_MEM2MEM_DEINTERLACE
+
 [4.19.0]
 # Needs gpiod_set_consumer_name
 VIDEO_MAX9286
+VIDEO_MAX96712
 
 [4.18.0]
 # Needs proc_create_single
@@ -77,6 +86,7 @@ VIDEO_OV9282
 VIDEO_OV8856
 VIDEO_OV8865
 VIDEO_OV5648
+VIDEO_OV5693
 VIDEO_OV7251
 VIDEO_OV13B10
 VIDEO_DW9807
@@ -84,7 +94,6 @@ VIDEO_AK7375
 VIDEO_DW9807_VCM
 VIDEO_OV2680
 VIDEO_MT9V111
-VIDEO_IMX319
 VIDEO_IMX355
 VIDEO_IMX290
 VIDEO_IMX214
@@ -110,6 +119,8 @@ VIDEO_ASPEED
 [4.8.0]
 # needs i2c_new_secondary_device
 VIDEO_ADV748X
+# needs pwm_init_state
+IR_PWM_TX
 
 [4.7.0]
 # needs i2c_mux_alloc

@@ -1299,4 +1299,9 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define ALIGN_DOWN(x, a)			__V4L_COMPAT_ALIGN_KERNEL((x) - ((a) - 1), (a))
 #endif
 
+#ifdef NEED_BITMAP_ZALLOC
+#define bitmap_zalloc(n, f) kcalloc((n) / BITS_PER_LONG, sizeof(long), (f))
+#define bitmap_free(b) kfree(b)
+#endif
+
 #endif /*  _COMPAT_H */

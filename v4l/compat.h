@@ -1304,4 +1304,8 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define bitmap_free(b) kfree(b)
 #endif
 
+#ifdef NEED_FIRMWARE_REQUEST_NOWARN
+#define firmware_request_nowarn request_firmware
+#endif
+
 #endif /*  _COMPAT_H */

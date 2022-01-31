@@ -27,6 +27,7 @@ add debug.patch
 add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
+add atmel.patch
 
 [5.15.1023]
 add v5.15_container_of.patch

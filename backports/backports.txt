@@ -27,13 +27,15 @@ add debug.patch
 add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
-add atmel.patch
 
 [5.15.1023]
 add v5.15_container_of.patch
 
 [5.14.1023]
 add v5.14_bus_void_return.patch
+
+[5.13.1023]
+add v5.13_atmel.patch
 
 [5.12.1023]
 add v5.12_uvc.patch

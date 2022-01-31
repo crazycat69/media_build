@@ -6,6 +6,10 @@ INTEL_ATOMISP
 VIDEO_OV772X
 VIDEO_OV9650
 
+# Adding an entry under kernel [major.minor] means that that
+# driver will be enabled from that kernel onwards, and disabled
+# for older kernels.
+
 [5.16]
 # Needs i2c_driver flags field
 VIDEO_IMX319
@@ -108,6 +112,7 @@ VIDEO_DW9714
 VIDEO_DW9768
 VIDEO_RDACM20
 VIDEO_RDACM21
+LIRC
 
 [4.9.0]
 # needs linux/bitfield.h

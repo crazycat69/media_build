@@ -90,6 +90,10 @@ RADIO_WL128X
 VIDEO_XILINX_CSI2RXSS
 VIDEO_IMX_MIPI_CSIS
 
+[4.12.0]
+# needs usb_bus sysdev field
+VIDEO_STK1160
+
 [4.10.0]
 # needs dma_request_chan
 VIDEO_XILINX

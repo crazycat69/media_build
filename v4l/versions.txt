@@ -88,6 +88,7 @@ VIDEO_MUX
 RADIO_WL128X
 # Needs clk_bulk_data
 VIDEO_XILINX_CSI2RXSS
+VIDEO_IMX_MIPI_CSIS
 
 [4.10.0]
 # needs dma_request_chan

@@ -36,6 +36,7 @@ add v5.14_bus_void_return.patch
 
 [5.13.1023]
 add v5.13_atmel.patch
+add v5.13_stk1160.patch
 
 [5.12.1023]
 add v5.12_uvc.patch

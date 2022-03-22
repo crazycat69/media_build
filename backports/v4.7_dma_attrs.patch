@@ -380,10 +380,10 @@ index 06245582f41e..f075ee362800 100644
  		pr_err("failed to map scatterlist\n");
  		mutex_unlock(lock);
  		return ERR_PTR(-EIO);
-diff --git a/drivers/media/platform/sti/bdisp/bdisp-hw.c b/drivers/media/platform/sti/bdisp/bdisp-hw.c
+diff --git a/drivers/media/platform/st/sti/bdisp/bdisp-hw.c b/drivers/media/platform/st/sti/bdisp/bdisp-hw.c
 index a74e9fd65238..eafc63307ef7 100644
---- a/drivers/media/platform/sti/bdisp/bdisp-hw.c
-+++ b/drivers/media/platform/sti/bdisp/bdisp-hw.c
+--- a/drivers/media/platform/st/sti/bdisp/bdisp-hw.c
++++ b/drivers/media/platform/st/sti/bdisp/bdisp-hw.c
 @@ -430,11 +430,14 @@ int bdisp_hw_get_and_clear_irq(struct bdisp_dev *bdisp)
   */
  void bdisp_hw_free_nodes(struct bdisp_ctx *ctx)

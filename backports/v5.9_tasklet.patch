@@ -309,10 +309,10 @@ index dd510ee9b58a..f1ad229a9d3b 100644
  
  	pxa_camera_activate(pcdev);
  
-diff --git a/drivers/media/platform/sti/c8sectpfe/c8sectpfe-core.c b/drivers/media/platform/sti/c8sectpfe/c8sectpfe-core.c
+diff --git a/drivers/media/platform/st/sti/c8sectpfe/c8sectpfe-core.c b/drivers/media/platform/st/sti/c8sectpfe/c8sectpfe-core.c
 index 338b205ae3a7..febcbc5e225c 100644
---- a/drivers/media/platform/sti/c8sectpfe/c8sectpfe-core.c
-+++ b/drivers/media/platform/sti/c8sectpfe/c8sectpfe-core.c
+--- a/drivers/media/platform/st/sti/c8sectpfe/c8sectpfe-core.c
++++ b/drivers/media/platform/st/sti/c8sectpfe/c8sectpfe-core.c
 @@ -77,9 +77,9 @@ static void c8sectpfe_timer_interrupt(struct timer_list *t)
  	add_timer(&fei->timer);
  }

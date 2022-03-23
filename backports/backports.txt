@@ -67,6 +67,7 @@ add v5.5_alsa_pcm_api_updates.patch
 add v5.5_memtype_h.patch
 add v5.5_dev_printk_h.patch
 add v5.5_vb2_kmap.patch
+add v5.5_go7007.patch
 
 [5.4.1023]
 add v5.4_revert_spi_transfer.patch

@@ -30,6 +30,7 @@ add rc-cec.patch
 
 [5.17.1023]
 add v5.17_spi.patch
+add v5.17_iosys.patch
 
 [5.15.1023]
 add v5.15_container_of.patch

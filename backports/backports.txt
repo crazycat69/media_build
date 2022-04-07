@@ -28,6 +28,11 @@ add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
 
+[5.17.1023]
+add v5.17_spi.patch
+add v5.17_iosys.patch
+add v5.17_overflow.patch
+
 [5.15.1023]
 add v5.15_container_of.patch
 
@@ -36,6 +41,7 @@ add v5.14_bus_void_return.patch
 
 [5.13.1023]
 add v5.13_atmel.patch
+add v5.13_stk1160.patch
 
 [5.12.1023]
 add v5.12_uvc.patch
@@ -66,6 +72,7 @@ add v5.5_alsa_pcm_api_updates.patch
 add v5.5_memtype_h.patch
 add v5.5_dev_printk_h.patch
 add v5.5_vb2_kmap.patch
+add v5.5_go7007.patch
 
 [5.4.1023]
 add v5.4_revert_spi_transfer.patch

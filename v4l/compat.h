@@ -1312,4 +1312,8 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define lockdep_assert_not_held(l)
 #endif
 
+#ifdef NEED_DEV_IS_PLATFORM
+#define dev_is_platform(dev) ((dev)->bus == &platform_bus_type)
+#endif
+
 #endif /*  _COMPAT_H */

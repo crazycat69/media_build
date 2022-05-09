@@ -1308,4 +1308,8 @@ static inline int dma_mmap_noncontiguous(struct device *dev,
 #define firmware_request_nowarn request_firmware
 #endif
 
+#ifdef NEED_LOCKDEP_ASSERT_NOT_HELD
+#define lockdep_assert_not_held(l)
+#endif
+
 #endif /*  _COMPAT_H */

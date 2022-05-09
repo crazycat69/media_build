@@ -153,6 +153,7 @@ sub check_other_dependencies()
 	check_files_for_func("ALIGN_DOWN", "NEED_ALIGN_DOWN", "include/linux/align.h", "include/linux/kernel.h");
 	check_files_for_func("bitmap_zalloc", "NEED_BITMAP_ZALLOC", "include/linux/bitmap.h");
 	check_files_for_func("firmware_request_nowarn", "NEED_FIRMWARE_REQUEST_NOWARN", "include/linux/firmware.h");
+	check_files_for_func("lockdep_assert_not_held", "NEED_LOCKDEP_ASSERT_NOT_HELD", "include/linux/lockdep.h");
 
 	# For tests for uapi-dependent logic
 	check_files_for_func_uapi("usb_endpoint_maxp_mult", "NEED_USB_ENDPOINT_MAXP_MULT", "usb/ch9.h");

@@ -96,6 +96,10 @@ VIDEO_XILINX_CSI2RXSS
 # needs usb_bus sysdev field
 VIDEO_STK1160
 
+[4.11.0]
+# needs refcount
+IR_IMON
+
 [4.10.0]
 # needs dma_request_chan
 VIDEO_XILINX

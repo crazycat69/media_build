@@ -121,6 +121,14 @@ static inline void *kvmalloc_array(size_t n, size_t size, gfp_t flags)
 }
 #endif
 
+#ifdef NEED_KVCALLOC
+#include <linux/mm.h>
+static inline void *kvcalloc(size_t n, size_t size, gfp_t flags)
+{
+	return kvmalloc_array(n, size, flags | __GFP_ZERO);
+}
+#endif
+
 #ifdef NEED_USB_ENDPOINT_MAXP_MULT
 #define USB_EP_MAXP_MULT_SHIFT  11
 #define USB_EP_MAXP_MULT_MASK   (3 << USB_EP_MAXP_MULT_SHIFT)

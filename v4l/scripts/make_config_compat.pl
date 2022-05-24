@@ -64,6 +64,7 @@ sub check_other_dependencies()
 {
 	check_files_for_func("frame_vector_create", "NEED_FRAME_VECTOR", "include/media/frame_vector.h");
 	check_files_for_func("kvzalloc", "NEED_KVZALLOC", "include/linux/mm.h", "include/linux/slab.h");
+	check_files_for_func("kvcalloc", "NEED_KVCALLOC", "include/linux/mm.h", "include/linux/slab.h");
 	check_files_for_func("ktime_get_ns", "NEED_KTIME_GET_NS", "include/linux/timekeeping.h");
 	check_files_for_func("led_set_brightness_sync", "NEED_LED_SET_BRIGHTNESS", "include/linux/leds.h");
 	check_files_for_func("BUS_CEC", "NEED_BUS_CEC", "include/uapi/linux/input.h");

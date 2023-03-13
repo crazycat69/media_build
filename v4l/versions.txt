@@ -5,6 +5,7 @@ INTEL_ATOMISP
 # Needs devm_regmap_init_sccb (select REGMAP_SCCB)
 VIDEO_OV772X
 VIDEO_OV9650
+VIDEO_TC358746
 
 # Adding an entry under kernel [major.minor] means that that
 # driver will be enabled from that kernel onwards, and disabled

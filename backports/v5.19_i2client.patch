@@ -4021,3 +4021,24 @@ index d14c97d79e83..8ce7c4c7005a 100644
  }
  
  static const struct i2c_device_id tef6862_id[] = {
+diff --git a/drivers/media/cec/i2c/ch7322.c b/drivers/media/cec/i2c/ch7322.c
+index 34fad7123704..e76ecf83d6f5 100644
+--- a/drivers/media/cec/i2c/ch7322.c
++++ b/drivers/media/cec/i2c/ch7322.c
+@@ -565,7 +565,7 @@ static int ch7322_probe(struct i2c_client *client)
+ 	return ret;
+ }
+ 
+-static void ch7322_remove(struct i2c_client *client)
++static int ch7322_remove(struct i2c_client *client)
+ {
+ 	struct ch7322 *ch7322 = i2c_get_clientdata(client);
+ 
+@@ -578,6 +578,7 @@ static void ch7322_remove(struct i2c_client *client)
+ 	mutex_destroy(&ch7322->mutex);
+ 
+ 	dev_info(&client->dev, "device unregistered\n");
++	return 0;
+ }
+ 
+ static const struct of_device_id ch7322_of_match[] = {

@@ -7,10 +7,14 @@ INTEL_ATOMISP
 # Needs devm_regmap_init_sccb (select REGMAP_SCCB)
 VIDEO_OV772X
 VIDEO_OV9650
+VIDEO_TC358746
 
 # Adding an entry under kernel [major.minor] means that that
 # driver will be enabled from that kernel onwards, and disabled
 # for older kernels.
+
+[5.19]
+VIDEO_DW9768
 
 [5.16]
 # Needs i2c_driver flags field
@@ -130,7 +134,6 @@ I2C_BCM2048
 VIDEO_HI846
 VIDEO_HI847
 VIDEO_DW9714
-VIDEO_DW9768
 VIDEO_RDACM20
 VIDEO_RDACM21
 VIDEO_OG01A1B

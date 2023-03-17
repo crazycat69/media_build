@@ -39,6 +39,7 @@ add v5.19_videobuf2.patch
 
 [5.18.1023]
 add v5.18_rc.patch
+add v5.18_rc2.patch
 add v5.18_v4l2.patch
 
 [5.17.1023]
@@ -53,7 +54,6 @@ add v5.15_container_of.patch
 add v5.14_bus_void_return.patch
 
 [5.13.1023]
-add v5.13_atmel.patch
 add v5.13_stk1160.patch
 
 [5.12.1023]

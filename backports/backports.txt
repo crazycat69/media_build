@@ -154,31 +154,6 @@ add v4.9_probe_new.patch
 add v4.9_vivid_ktime.patch
 
 [4.8.1023]
-add v4.8_user_pages_flag.patch
 add v4.8_em28xx_bitfield.patch
 add v4.8_dma_map_resource.patch
 add v4.8_drm_crtc.patch
-
-[4.7.1023]
-add v4.7_dma_attrs.patch
-add v4.7_pci_alloc_irq_vectors.patch
-add v4.7_copy_to_user_warning.patch
-add v4.7_objtool_warning.patch
-
-[4.6.1023]
-add v4.6_i2c_mux.patch
-
-[4.5.1023]
-add v4.5_gpiochip_data_pointer.patch
-add v4.5_get_user_pages.patch
-add v4.5_uvc_super_plus.patch
-add v4.5_copy_to_user_warning.patch
-add v4.5_vb2_cpu_access.patch
-
-[4.4.1023]
-add v4.4_gpio_chip_parent.patch
-add v4.4_user_pages_flag.patch
-
-[4.3.1023]
-delete v4.4_user_pages_flag.patch
-add v4.3_bt87x_const_fix.patch

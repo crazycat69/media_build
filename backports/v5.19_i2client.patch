@@ -1179,6 +1179,27 @@ index ff9bb9fc97dd..2d7a34079927 100644
  }
  
  static const struct of_device_id et8ek8_of_table[] = {
+diff --git a/drivers/media/i2c/hi556.c b/drivers/media/i2c/hi556.c
+index e422ac7609b5..4bf33deafdb0 100644
+--- a/drivers/media/i2c/hi556.c
++++ b/drivers/media/i2c/hi556.c
+@@ -1101,7 +1101,7 @@ static int hi556_check_hwcfg(struct device *dev)
+ 	return ret;
+ }
+ 
+-static void hi556_remove(struct i2c_client *client)
++static int hi556_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct hi556 *hi556 = to_hi556(sd);
+@@ -1111,6 +1111,7 @@ static void hi556_remove(struct i2c_client *client)
+ 	v4l2_ctrl_handler_free(sd->ctrl_handler);
+ 	pm_runtime_disable(&client->dev);
+ 	mutex_destroy(&hi556->mutex);
++	return 0;
+ }
+ 
+ static int hi556_probe(struct i2c_client *client)
 diff --git a/drivers/media/i2c/hi846.c b/drivers/media/i2c/hi846.c
 index 7c61873b7198..210160d40c13 100644
 --- a/drivers/media/i2c/hi846.c
@@ -1221,6 +1242,27 @@ index 5a82b15a9513..37c4a74f55b6 100644
  }
  
  static int hi847_probe(struct i2c_client *client)
+diff --git a/drivers/media/i2c/imx208.c b/drivers/media/i2c/imx208.c
+index 64c70ebf9869..2021a0296243 100644
+--- a/drivers/media/i2c/imx208.c
++++ b/drivers/media/i2c/imx208.c
+@@ -1065,7 +1065,7 @@ static int imx208_probe(struct i2c_client *client)
+ 	return ret;
+ }
+ 
+-static void imx208_remove(struct i2c_client *client)
++static int imx208_remove(struct i2c_client *client)
+ {
+ 	struct v4l2_subdev *sd = i2c_get_clientdata(client);
+ 	struct imx208 *imx208 = to_imx208(sd);
+@@ -1079,6 +1079,7 @@ static void imx208_remove(struct i2c_client *client)
+ 	pm_runtime_set_suspended(&client->dev);
+ 
+ 	mutex_destroy(&imx208->imx208_mx);
++	return 0;
+ }
+ 
+ static const struct dev_pm_ops imx208_pm_ops = {
 diff --git a/drivers/media/i2c/imx214.c b/drivers/media/i2c/imx214.c
 index 710c9fb515fd..b1d9dab6687b 100644
 --- a/drivers/media/i2c/imx214.c

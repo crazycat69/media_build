@@ -1,0 +1,21 @@
+diff --git a/drivers/media/dvb-frontends/si2183.c b/drivers/media/dvb-frontends/si2183.c
+index 4aa0b7876340..3adcdd7728ec 100644
+--- a/drivers/media/dvb-frontends/si2183.c
++++ b/drivers/media/dvb-frontends/si2183.c
+@@ -1628,7 +1628,7 @@ static int si2183_probe(struct i2c_client *client)
+ 	return ret;
+ }
+ 
+-static void si2183_remove(struct i2c_client *client)
++static int si2183_remove(struct i2c_client *client)
+ {
+ 	struct si2183_dev *dev = i2c_get_clientdata(client);
+ 
+@@ -1652,6 +1652,7 @@ static void si2183_remove(struct i2c_client *client)
+ 	dev->fe.demodulator_priv = NULL;
+ 
+ 	kfree(dev);
++	return 0;
+ }
+ 
+ static const struct i2c_device_id si2183_id_table[] = {

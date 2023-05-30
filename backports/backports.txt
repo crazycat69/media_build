@@ -28,6 +28,10 @@ add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
 
+[6.3.1023]
+add v6.3_class_create.patch
+add v6.3_check_endpoint.patch
+
 [6.2.1023]
 add v6.2_class.patch
 add v6.2_remove.patch
